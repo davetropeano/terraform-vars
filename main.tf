@@ -17,6 +17,10 @@ variable "zones" {
   default = ["us-east-1a", "us-east-1b"]
 }
 
+variable "receiving_list" {
+  type = "list"
+}
+
 provider "ibm" {}
 
 output "out_key" {
